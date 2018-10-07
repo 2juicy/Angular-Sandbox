@@ -28,9 +28,22 @@ export class UserComponent implements OnInit {
     this.hobbies = ["coding", "sleeping", "music"];
     this.hello = true;
   }
+
   onClick() {
     this.name = "Johnny";
-    this.hobbies.push("New Hobby!");
+  }
+
+  addHobby(hobby) {
+    this.hobbies.unshift(hobby);
+    return false;
+  }
+
+  deleteHobby(hobby) {
+    for (let i = 0; i < this.hobbies.length; i++) {
+      if (this.hobbies[i] == hobby) {
+        this.hobbies.splice(i, 1);
+      }
+    }
   }
 }
 
