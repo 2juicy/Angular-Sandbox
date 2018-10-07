@@ -7,6 +7,22 @@
 
 <button (click)="onClick()">Click</button>
 
+<h1>Edit User</h1>
+<form>
+  <div>
+    <label for="name">Name: </label><br />
+    <input type="text">
+  </div>
+  <div>
+    <label for="Age">Age: </label><br />
+    <input type="number">
+  </div>
+  <div>
+    <label for="email">Email: </label><br />
+    <input type="email">
+  </div>
+</form>
+
 <h1>Hobbies</h1>
 <form (submit)="addHobby(hobby.value)">
   <div>
