@@ -5,6 +5,8 @@
   <li>{{address.street}} {{address.city}}, {{address.state}}</li>
 </ul>
 
+<button (click)="onClick()">Click</button>
+
 <h1>Hobbies</h1>
 <ul>
   <li *ngFor="let hobby of hobbies; let i = index">{{i+1}}: {{hobby}}</li>

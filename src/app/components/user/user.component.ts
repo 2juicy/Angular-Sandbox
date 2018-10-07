@@ -28,6 +28,9 @@ export class UserComponent implements OnInit {
     this.hobbies = ["coding", "sleeping", "sex"];
     this.hello = true;
   }
+  onClick() {
+    this.name = "Johnny";
+  }
 }
 
 interface Address {
