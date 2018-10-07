@@ -25,11 +25,12 @@ export class UserComponent implements OnInit {
       city: "Boston",
       state: "MA"
     };
-    this.hobbies = ["coding", "sleeping", "sex"];
+    this.hobbies = ["coding", "sleeping", "music"];
     this.hello = true;
   }
   onClick() {
     this.name = "Johnny";
+    this.hobbies.push("New Hobby!");
   }
 }
 
