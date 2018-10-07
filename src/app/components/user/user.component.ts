@@ -9,11 +9,7 @@ export class UserComponent implements OnInit {
   name: string;
   age: number;
   email: string;
-  address: {
-    street: string;
-    city: string;
-    state: string;
-  };
+  address: Address;
 
   constructor() {
     console.log("constructor ran..");
@@ -28,4 +24,10 @@ export class UserComponent implements OnInit {
       state: "MA"
     };
   }
+}
+
+interface Address {
+  street: string;
+  city: string;
+  state: string;
 }
