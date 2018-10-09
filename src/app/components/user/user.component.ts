@@ -22,11 +22,11 @@ export class UserComponent implements OnInit {
     this.age = 30;
     this.email = "test@test.com";
     this.address = {
-      street: "50 main st",
+      street: "50 Main St.",
       city: "Boston",
       state: "MA"
     };
-    this.hobbies = ["coding", "sleeping", "music"];
+    this.hobbies = ["coding", "gaming", "music"];
     this.hello = true;
   }
 
